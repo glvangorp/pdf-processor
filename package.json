@@ -1,0 +1,36 @@
+{
+  "name": "pdf-processor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:dev": "webpack --mode=development",
+    "start": "http-server",
+    "ocr": "node node_modules/tesseract.js/dist/tesseract.js sample.png out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glvangorp/pdf-processor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glvangorp/pdf-processor/issues"
+  },
+  "homepage": "https://github.com/glvangorp/pdf-processor#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "pdfjs-dist": "^2.0.489",
+    "webpack": "^4.20.2",
+    "tesseract.js": "^1.0.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
